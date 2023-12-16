@@ -1,6 +1,3 @@
-// Conteúdo do arquivo modal.js
-
-// Função para fechar o modal
 function closeModal() {
   $('#pokemonModal').modal('hide');
 }

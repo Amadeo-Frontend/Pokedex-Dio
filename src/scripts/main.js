@@ -107,7 +107,7 @@ function renderPokemonDetails(pokemon) {
 
   // Adicionar evento de clique ao botão de informações
   botaoInfo.addEventListener('click', function () {
-    showPokemonDetails(pokemon);
+    showPokemonDetailsModal(pokemon);
   });
 
   // Adicionar elementos ao item de lista do Pokémon
@@ -131,7 +131,7 @@ function renderPokemonDetails(pokemon) {
 
   // Adicionar evento de clique ao item de lista do Pokémon
   itemPokemon.addEventListener('click', function () {
-    showPokemonDetails(pokemon);
+    showPokemonDetailsModal(pokemon);
   });
 
   // Adicionar item de lista do Pokémon à lista de Pokémon

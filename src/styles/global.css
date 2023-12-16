@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700;900&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Sora', sans-serif;
+
+}
+
+body {
+    background-color: #f6f8fc;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background: #f4f4f4d5;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ED5564;
+    border-radius: 2em;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #ed5564cf;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    margin: 1rem;
+}
+
+.header img {
+    width: 5rem;
+    height: 80px;
+    margin-right: 1rem;
+}
+
+.container {
+    padding: 1rem;
+    background-color: #fff;
+    height: 100vh;
+    width: 100vw;
+}
+
+@media screen and (min-width: 992px) {
+    .container {
+        max-width: 992px;
+        height: auto;
+        margin: 1rem auto;
+        border-radius: 1rem;
+    }
+}
+
+.container h1 {
+    margin: 0;
+    position: relative;
+    letter-spacing: 0, 05em;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 900;
+}
+
+.container h1 span {
+    color: #555;
+    transition: 0.25s;
+}
+
+.container h1:hover span {
+    color: rgb(255, 30, 0);
+    transition: 0.25s;
+    text-shadow: 0 0 1px rgb(255, 30, 0),
+        0 0 2px rgb(255, 30, 0),
+        0 0 3px rgb(255, 30, 0);
+}
+
+.pokemons {
+    display: grid;
+    grid-template-columns: 1fr;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.pokemon {
+    display: flex;
+    flex-direction: column;
+    margin: .5rem;
+    padding: 2rem 1rem;
+    color: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+}
+
+.pokemon:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+    transition: all 0.3s ease-in;
+}
+
+.pokemon .number {
+    text-align: right;
+    color: black;
+    opacity: .3;
+    font-size: .625rem;
+}
+
+.pokemon .name {
+    color: #f4f4f4;
+    margin-bottom: .25rem;
+}
+
+.pokemon .types {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.pokemon .detail .types .type {
+    width: 100%;
+    padding: .25rem .5rem;
+    margin: .25rem 0;
+    font-size: .625rem;
+    text-align: center;
+    background-color: #61e1ea;
+    filter: brightness(1.1);
+    border-radius: 1rem;
+}
+
+.detail {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pokemon .detail img {
+    max-width: 100%;
+    height: 70px;
+    filter: drop-shadow(2px 4px 6px #121212);
+}
+
+#btnCarregarMais {
+    background-color: #6c79db;
+    color: #f4f4f4;
+    border: none;
+    padding: 1rem 1rem;
+    border-radius: 5rem;
+    cursor: pointer;
+    margin: 2rem 0;
+}
+
+#btnCarregarMais:hover {
+    opacity: 0.7;
+}
+
+.btn-top {
+    background-color: #6c79db;
+    color: #f4f4f4;
+    border: none;
+    padding: 1rem 1rem;
+    border-radius: 5rem;
+    cursor: pointer;
+    margin: 2rem 0;
+    float: right;
+    transition: all ease;
+}
+
+.btn-top:hover {
+    opacity: 0.8;
+}
+
+.info-button {
+    background-color: transparent;
+    border-radius: 2rem;
+    color: #b96969;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.info-button:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+    transition: all 0.3s ease-in;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    z-index: 1;
+}
+
+.modal img {
+    max-width: 100%;
+    height: auto;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 380px) {
+    .pokemons {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .pokemons {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .pokemons {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}

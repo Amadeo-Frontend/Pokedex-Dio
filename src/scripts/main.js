@@ -119,7 +119,7 @@ function renderPokemonDetails(pokemon) {
   detalhe.classList.add('detail');
   detalhe.appendChild(tipos);
   detalhe.appendChild(imagem);
-  detalhe.appendChild(botaoInfo); // Adicionar o botão de informações ao detalhe
+  detalhe.appendChild(botaoInfo);
 
   // Adicionar detalhes do Pokémon ao item de lista
   itemPokemon.appendChild(detalhe);

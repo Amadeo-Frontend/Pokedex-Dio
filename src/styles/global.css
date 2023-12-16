@@ -39,6 +39,10 @@ body {
     margin-right: 1rem;
 }
 
+.header .info-button {
+    display: flex;
+}
+
 .container {
     padding: 1rem;
     background-color: #fff;
@@ -178,6 +182,7 @@ body {
     color: #fff;
     display: flex;
     justify-content: flex-start;
+    margin-top: 0.5rem;
 }
 
 .info-button:hover {
@@ -186,7 +191,53 @@ body {
     transition: all 0.3s ease-in;
 }
 
-/* Estilos para o modal */
+.stats {
+    margin-top: 1rem;
+}
+
+.stat-bar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.stat-bar span {
+    flex: 0 0 200px;
+    /* Ajuste conforme necessário */
+    font-weight: bold;
+    margin: 1rem;
+}
+
+.stat-value {
+    flex: 1;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 0.25rem;
+    padding: 8px;
+    overflow: hidden;
+}
+
+.status {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 18px 0;
+
+}
+
+.status-element {
+    display: flex;
+    align-items: center;
+}
+
+
+.barra {
+    height: 20px;
+    background-color: #ea6d61;
+    border-radius: 5px;
+    color: #f4f4f4;
+    margin-left: 8px;
+}
 
 @media screen and (min-width: 380px) {
     .pokemons {

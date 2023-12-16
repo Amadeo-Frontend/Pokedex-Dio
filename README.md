@@ -20,3 +20,7 @@ Ao carregar a página, você será recebido com uma lista inicial de Pokémon, a
 ### 4. Voltar ao Topo
 
 - Há um botão de seta para cima no canto inferior direito da página. Clicar nesse botão levará você de volta ao topo da lista.
+
+## Live
+
+https://pokedex-dio-2023.vercel.app/

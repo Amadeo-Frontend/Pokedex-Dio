@@ -96,6 +96,7 @@ body {
     color: #fff;
     border-radius: 1rem;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+    cursor: pointer;
 }
 
 .pokemon:hover {
@@ -174,21 +175,6 @@ body {
 
 .btn-top:hover {
     opacity: 0.8;
-}
-
-.info-button {
-    background-color: transparent;
-    border-radius: 2rem;
-    color: #fff;
-    display: flex;
-    justify-content: flex-start;
-    margin-top: 0.5rem;
-}
-
-.info-button:hover {
-    transform: scale(1.03);
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
-    transition: all 0.3s ease-in;
 }
 
 .stats {

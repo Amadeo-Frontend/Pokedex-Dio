@@ -100,16 +100,6 @@ function renderPokemonDetails(pokemon) {
   imagem.src = pokemon.sprites.other['dream_world'].front_default;
   imagem.alt = pokemon.name.toLowerCase(); // Alt dinâmico com o nome do Pokémon
 
-  // Criar um botão de informações
-  const botaoInfo = document.createElement('button');
-  botaoInfo.classList.add('info-button');
-  botaoInfo.textContent = 'Info';
-
-  // Adicionar evento de clique ao botão de informações
-  botaoInfo.addEventListener('click', function () {
-    showPokemonDetailsModal(pokemon);
-  });
-
   // Adicionar elementos ao item de lista do Pokémon
   itemPokemon.appendChild(numero);
   itemPokemon.appendChild(nome);
@@ -119,7 +109,6 @@ function renderPokemonDetails(pokemon) {
   detalhe.classList.add('detail');
   detalhe.appendChild(tipos);
   detalhe.appendChild(imagem);
-  detalhe.appendChild(botaoInfo);
 
   // Adicionar detalhes do Pokémon ao item de lista
   itemPokemon.appendChild(detalhe);

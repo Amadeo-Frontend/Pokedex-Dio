@@ -22,7 +22,7 @@ function showPokemonDetailsModal(pokemon) {
     const tipoElement = document.createElement('span');
     tipoElement.textContent =
       tipo.type.name.charAt(0).toUpperCase() + tipo.type.name.slice(1);
-    tipoElement.classList.add('badge', 'badge-light'); // Adicionar classes do Bootstrap
+    tipoElement.classList.add('badge', 'badge-light');
     tipoElement.style.backgroundColor = getPokemonTypeColor(tipo.type.name);
     tipos.appendChild(tipoElement);
   });
@@ -37,7 +37,6 @@ function showPokemonDetailsModal(pokemon) {
     'Sp. Atk',
     'Sp. Def',
     'Speed',
-    'Total',
   ];
 
   const baseStats = pokemon.stats.map((stat) => stat.base_stat);
@@ -55,7 +54,7 @@ function showPokemonDetailsModal(pokemon) {
     // Criar a barra horizontal
     const barra = document.createElement('div');
     barra.classList.add('barra');
-    barra.style.width = `${(baseStats[i] / 200) * 100}%`; // Ajustar a largura da barra
+    barra.style.width = `${(baseStats[i] / 255) * 100}%`;
     barra.textContent = baseStats[i];
 
     // Adicionar a barra ao elemento de status

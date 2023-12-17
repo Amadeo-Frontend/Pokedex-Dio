@@ -188,14 +188,12 @@ body {
 }
 
 .stat-bar span {
-    flex: 0 0 200px;
-    /* Ajuste conforme necessário */
+    flex: 0 0 250px;
     font-weight: bold;
     margin: 1rem;
 }
 
 .stat-value {
-    flex: 1;
     height: 20px;
     background-color: #fff;
     border-radius: 0.25rem;
@@ -204,25 +202,48 @@ body {
 }
 
 .status {
+    width: 100%;
     display: flex;
     flex-direction: column;
+    padding: 16px;
+    border-radius: 8px;
     gap: 10px;
     margin: 18px 0;
-
+    background-color: #55555519;
 }
 
 .status-element {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 
 .barra {
+    width: 100%;
     height: 20px;
     background-color: #ea6d61;
     border-radius: 5px;
     color: #f4f4f4;
     margin-left: 8px;
+}
+
+.modal .types:first-child {
+    margin-right: 1rem;
+}
+
+.modal img {
+    height: 100px;
+    width: 100%;
+    filter: drop-shadow(2px 4px 6px #121212);
+}
+
+.modal .total {
+    background-color: #ea6d61;
+    width: fit-content;
+    padding: 8px;
+    border-radius: 8px;
+    align-items: end;
 }
 
 @media screen and (min-width: 380px) {

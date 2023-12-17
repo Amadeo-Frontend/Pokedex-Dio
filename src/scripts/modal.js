@@ -1,6 +1,8 @@
+// Função para fechar o modal
 function closeModal() {
   $('#pokemonModal').modal('hide');
 }
+
 // Função para exibir detalhes do Pokémon no modal
 function showPokemonDetailsModal(pokemon) {
   const modalName = document.getElementById('modalPokemonName');
@@ -41,6 +43,9 @@ function showPokemonDetailsModal(pokemon) {
 
   const baseStats = pokemon.stats.map((stat) => stat.base_stat);
 
+  // Variável para armazenar o total dos stats
+  let totalStats = 0;
+
   for (let i = 0; i < statusLabels.length; i++) {
     const statusElement = document.createElement('div');
     statusElement.classList.add('status-element');
@@ -62,15 +67,23 @@ function showPokemonDetailsModal(pokemon) {
 
     // Adicionar o elemento de status ao contêiner de status
     status.appendChild(statusElement);
+
+    // Adicionar ao totalStats
+    totalStats += baseStats[i];
   }
+
+  const totalElement = document.createElement('div');
+  totalElement.textContent = `Total: ${totalStats}`;
+  totalElement.classList.add('total');
 
   const imagem = document.createElement('img');
   imagem.src = pokemon.sprites.other['dream_world'].front_default;
   imagem.alt = pokemon.name.toLowerCase();
 
   modalDetails.appendChild(tipos);
-  modalDetails.appendChild(status); // Adicionar informações de status
   modalDetails.appendChild(imagem);
+  modalDetails.appendChild(status);
+  modalDetails.appendChild(totalElement);
 
   // Exibir o modal usando Bootstrap
   $('#pokemonModal').modal('show');

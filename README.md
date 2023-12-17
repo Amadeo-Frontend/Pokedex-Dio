@@ -21,4 +21,8 @@ Ao carregar a página, você será recebido com uma lista inicial de Pokémon, a
 
 - Há um botão de seta para cima no canto inferior direito da página. Clicar nesse botão levará você de volta ao topo da lista.
 
-<https://github.com/Amadeo-Frontend/images_sites/blob/main/Pokedex.mp4>
+
+
+https://github.com/Amadeo-Frontend/Pokedex-Dio/assets/104178969/98afbd6f-96cc-464d-9690-6b93a4799fd0
+
+

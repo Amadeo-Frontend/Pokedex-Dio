@@ -6,7 +6,7 @@ Bem-vindo à Pokedex, uma aplicação web que permite explorar e descobrir infor
 
 ### 1. Visualização Inicial
 
-Ao carregar a página, você será recebido com uma lista inicial de Pokémon, apresentando seus números, nomes e tipos principais. Cada Pokémon é representado por um cartão colorido que reflete o seu tipo principal.
+Ao carregar a página, um efeito fade-in no titulo da página e imagem ,e você será recebido com uma lista inicial de Pokémon que vem com o efeito fade-up, apresentando seus números, nomes e tipos principais. Cada Pokémon é representado por um cartão colorido que reflete o seu tipo principal.
 
 ### 2. Detalhes do Pokémon
 
